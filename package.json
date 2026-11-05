@@ -1,0 +1,61 @@
+{
+  "name": "dsh-session-stepper",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness plugin: step through the sessions that need you — questions, queued work, running agents, freshly updated — instead of walking the list by date.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "session",
+    "navigation",
+    "shortcut"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/needs.test.mjs",
+    "check": "node --check client.js && node --check index.js"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-shortcuts"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "author": "dsh-session-stepper contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/dsh-session-stepper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-session-stepper/issues"
+  },
+  "homepage": "https://github.com/OWNER/dsh-session-stepper#readme"
+}

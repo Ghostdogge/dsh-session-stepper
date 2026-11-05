@@ -1,0 +1,9 @@
+# Config layer for dsh-session-stepper.
+#
+# One inserted row mounts both halves of the package: the Host shell (index.js)
+# and the browser half (client.js) that registers the two step commands.
+
+- insert:
+    - id: dsh-session-stepper
+      name: 'dsh-session-stepper'
+      config: {}
