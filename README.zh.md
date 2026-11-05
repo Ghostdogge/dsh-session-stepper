@@ -38,7 +38,7 @@ plugin_manager install_bundle --target /path/to/dsh-session-stepper
 从 GitHub 安装（发布后）：
 
 ```
-dsh plugin add github:OWNER/dsh-session-stepper
+dsh plugin add github:Ghostdogge/dsh-session-stepper
 ```
 
 客户端半区是热应用的：改完 `client.js` 后移除再安装这个 bundle，命令即刻生效，无需重启 DSH。

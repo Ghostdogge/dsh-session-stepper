@@ -52,10 +52,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-session-stepper.git"
+    "url": "git+https://github.com/Ghostdogge/dsh-session-stepper.git"
   },
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-session-stepper/issues"
+    "url": "https://github.com/Ghostdogge/dsh-session-stepper/issues"
   },
-  "homepage": "https://github.com/OWNER/dsh-session-stepper#readme"
+  "homepage": "https://github.com/Ghostdogge/dsh-session-stepper#readme"
 }

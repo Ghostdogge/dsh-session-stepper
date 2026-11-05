@@ -42,7 +42,7 @@ plugin_manager install_bundle --target /path/to/dsh-session-stepper
 From GitHub (once published):
 
 ```
-dsh plugin add github:OWNER/dsh-session-stepper
+dsh plugin add github:Ghostdogge/dsh-session-stepper
 ```
 
 Client halves are hot-applied: after changing `client.js`, remove and reinstall the bundle and the
